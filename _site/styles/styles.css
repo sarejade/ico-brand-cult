@@ -1,0 +1,220 @@
+/* ------ INDEX --------------------
+  - CSS RESET
+  - GENERAL HELPER CLASSES
+  - UNIVERSAL STYLES
+    - Layout
+    - Typography
+    - General Styles
+  - HEADER & FOOTER
+  - MODULAR ELEMENTS
+    - Element Name
+  - FORMS
+
+---------------------------
+Website Fonts: Century Gothic, Georgia
+Website Colours: peach - rgb(244,200,186), black - rgb(0,0,0), white - rgb(255,255,255), charcoal - rgb(76,76,76), light grey - rgb(242,242,242), rgb(169,231,232), purple rgb(195,193,210)
+----------------------------
+*/
+/* ---- CSS RESET --------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  border: 1px solid yellow;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* ---- GENERAL HELPER CLASSES --------------------------- */
+/* ---- Min-height ---- */
+.tall {
+  min-height: 100vh;
+}
+.med-height {
+  min-height: 50vh;
+}
+.short {
+  min-height: 30vh;
+}
+/* ---- Text Alignment ---- */
+.left {
+  text-align: left;
+}
+.centered {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+/* ---- No Padding ---- */
+.no-padding {
+  padding: 0;
+}
+/* ---- Background Colours ---- */
+.light-bg {
+  background-color: rgb(242,242,242);
+}
+.dark-bg {
+  background-color: rgb(76,76,76);
+}
+.peach-bg {
+  background-color: rgb(244,200,186);
+}
+.mint-bg {
+  background-color: rgb(169,231,232);
+}
+.purple-bg {
+  background-color: rgb(195,193,210);
+}
+/* ---- UNIVERSAL STYLES --------------------------- */
+/* ---- Layout ---- */
+header, footer {
+padding: 5vh 5vw;
+}
+section {
+padding: 10vh 5vw;
+}
+[class*=col] {
+padding: -0.5vw;
+}
+/* ---- Typography ---- */
+body {
+  font-family: 'Century Gothic', sans-serif;
+  color: rgb(76,76,76);
+  font-size: 13px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Century Gothic', sans-serif;
+  color: rgb(0,0,0);
+  line-height: 1.2;
+  letter-spacing: .04em;
+  margin: 0.3rem 0;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+h2 {
+  font-size: 2.4rem;
+  text-transform: lowercase;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+p, a {
+  line-height: 1.5;
+  letter-spacing: .05em;
+  margin: .5rem 0;
+  color: rgb(76,76,76);
+}
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(0,0,0);
+}
+blockquote {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.quotation-mark {
+  font-family: 'Century Gothic', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: -5;
+}
+.cta {
+  font-weight: bold;
+  border-bottom: 1.5px solid;
+}
+.bold {
+  font-weight: bold;
+}
+/* ---- General Styles ---- */
+.logo {
+  max-height: 100px;
+}
+.footer-logo {
+  max-height: 60px;
+}
+.social {
+  font-size: 1.2rem;
+  margin-right: .3rem;
+}
+/* ---- HEADER & FOOTER --------------------------- */
+header nav a {
+ margin: 0 .5rem;
+}
+footer nav a {
+  display: block;
+}
+.footer {
+  border-left: 1px solid rgb(0,0,0);
+}
+.footer-txt {
+  font-size: .7rem;
+}
+/* ---- FORMS --------------------------- */
+/* form */
+input, textarea {
+  width: 100%;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 10px;
+  color: rgb(76,76,76);
+  text-transform: uppercase;
+}
+/* form button */
+input[type=submit]{
+    background-color: rgb(0,0,0);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    -webkit-appearance: none;
+    font-weight: bold;
+    letter-spacing: .05em;
+    color: #fff;
+    font-size: inherit;
+}
+input[type=checkbox]{
+  width:auto;
+}
+/* ---- MODULAR ELEMENTS --------------------------- */
+/* images */
+.client-feature-img1 {
+  background-image: url('../images/rawpixel-com-252130.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 50vh;
+}
+.client-feature-img2 {
+  background-image: url('../images/lum3n-250309-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 50vh;
+}
