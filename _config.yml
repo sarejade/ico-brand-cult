@@ -1,0 +1,4 @@
+collections:
+  casestudies:
+    output: true
+    permalink: /:categories/:path

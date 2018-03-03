@@ -21,9 +21,9 @@ Website Colours: peach - rgb(244,200,186), black - rgb(0,0,0), white - rgb(255,2
   padding: 0;
   box-sizing: border-box;
 }
-* {
+/* {
   border: 1px solid yellow;
-}
+}*/
 img {
   max-width: 100%;
   height: auto;
@@ -49,9 +49,15 @@ img {
 .right {
   text-align: right;
 }
-/* ---- No Padding ---- */
+/* ---- Padding ---- */
 .no-padding {
   padding: 0;
+}
+.padded {
+  padding: 0% 10%;
+}
+.gallery-padding-right {
+  padding: 0 1% 0 0;
 }
 /* ---- Background Colours ---- */
 .light-bg {
@@ -62,6 +68,9 @@ img {
 }
 .peach-bg {
   background-color: rgb(244,200,186);
+}
+.light-peach-bg {
+  background-color: rgb(249,227,220);
 }
 .mint-bg {
   background-color: rgb(169,231,232);
@@ -152,6 +161,11 @@ blockquote {
 .bold {
   font-weight: bold;
 }
+.percentage {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: rgb(0,0,0);
+}
 /* ---- General Styles ---- */
 .logo {
   max-height: 100px;
@@ -162,6 +176,11 @@ blockquote {
 .social {
   font-size: 1.2rem;
   margin-right: .3rem;
+}
+hr.col-12 {
+  border: 1px solid;
+  border-color: rgb(242,242,242);
+  padding: 0;
 }
 /* ---- HEADER & FOOTER --------------------------- */
 header nav a {
@@ -224,4 +243,42 @@ input[type=checkbox]{
   align-items: center;
   position: relative;
   min-height: 50vh;
+}
+.client-feature-img3 {
+  background-image: url('../images/Death_to_stock_photography_Wake_Up_5.jpg');
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 15vw;
+}
+.client-gallery-img1 {
+  background-image: url('../images/DeathtoStock_Creative Community7.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 50vh;
+  margin-bottom: 2%;
+}
+.client-gallery-img2 {
+  background-image: url('../images/sharon-mccutcheon-530229-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 50vh;
+}
+.client-gallery-img3 {
+  background-image: url('../images/lauren-roberts-439974-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
 }
