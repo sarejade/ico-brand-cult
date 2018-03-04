@@ -22,7 +22,7 @@ Website Colours: peach - rgb(244,200,186), black - rgb(0,0,0), white - rgb(255,2
   box-sizing: border-box;
 }
 /* {
-  border: 1px solid yellow;
+  border: 1px solid pink;
 }*/
 img {
   max-width: 100%;
@@ -80,8 +80,28 @@ img {
 }
 /* ---- UNIVERSAL STYLES --------------------------- */
 /* ---- Layout ---- */
+html, body {
+  overflow-x: hidden;
+}
 header, footer {
 padding: 5vh 5vw;
+}
+/* -- Desktop size -- */
+@media screen and (min-width: 64em) {
+  .hide-dt {
+    display: none;
+  }
+}
+/* -- iPad, Mobile size -- */
+@media screen and (max-width: 64em) {
+  /* resizing of the typopgraphy */
+  .hide-mb {
+    display: none;
+  }
+  .footer-mb {
+    text-align: center;
+    display:  block;
+  }
 }
 section {
 padding: 10vh 5vw;
@@ -93,27 +113,29 @@ padding: -0.5vw;
 body {
   font-family: 'Century Gothic', sans-serif;
   color: rgb(76,76,76);
-  font-size: 13px;
+  font-size: 14px;
 }
-
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Century Gothic', sans-serif;
   color: rgb(0,0,0);
-  line-height: 1.2;
+  line-height: 1.3;
   letter-spacing: .04em;
   margin: 0.3rem 0;
 }
-
 h1 {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
 }
 h2 {
   font-size: 2.4rem;
   text-transform: lowercase;
   font-weight: bold;
+  margin-bottom: 1rem;
+}
+h2.padding-right {
+  padding-right: 20%;
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -122,10 +144,29 @@ h4 {
   text-transform: uppercase;
   font-weight: normal;
 }
+/* -- iPad, Mobile size -- */
+@media screen and (max-width: 64em) {
+  /* resizing of the typopgraphy */
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h2.padding-mb {
+    padding-top: 10%;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
 p, a {
   line-height: 1.5;
   letter-spacing: .05em;
-  margin: .5rem 0;
+  margin: .6rem 0;
   color: rgb(76,76,76);
 }
 a {
@@ -180,7 +221,45 @@ blockquote {
 hr.col-12 {
   border: 1px solid;
   border-color: rgb(242,242,242);
+  background-color: rgb(242,242,242);
   padding: 0;
+}
+#overlay-left {
+  border: 4px solid;
+  border-color: rgb(0,0,0);
+  background-color: rgb(0,0,0);
+  position: relative;
+  left: -60%;
+  margin: 5% 0;
+}
+#overlay-right {
+  border: 4px solid;
+  border-color: rgb(0,0,0);
+  background-color: rgb(0,0,0);
+  position: relative;
+  right: -60%;
+  margin: 5% 0;
+  z-index: 2;
+}
+/* -- iPad, Mobile size -- */
+@media screen and (max-width: 64em) {
+  /* resizing of hr */
+  #line-left-mb {
+    border: 2.5px solid;
+    border-color: rgb(0,0,0);
+    background-color: rgb(0,0,0);
+    margin: 5% 0;
+    position: relative;
+    left: -50%;
+  }
+  #line-right-mb {
+    border: 2.5px solid;
+    border-color: rgb(0,0,0);
+    background-color: rgb(0,0,0);
+    margin: 5% 0;
+    position: relative;
+    right: -50%;
+  }
 }
 /* ---- HEADER & FOOTER --------------------------- */
 header nav a {
@@ -225,7 +304,97 @@ input[type=checkbox]{
   width:auto;
 }
 /* ---- MODULAR ELEMENTS --------------------------- */
+.bg-overlay {
+  background-color: rgb(242,242,242);
+  width: 50%;
+  position: relative;
+}
+.bg-overlay img {
+  width: 90vw;
+  max-width: 90vw;
+  position: relative;
+  left: 10vw;
+}
+/* -- iPad, Mobile size -- */
+@media screen and (max-width: 64em) {
+  .bg-overlay img {
+    height: 80vh;
+    width: 90vw;
+    max-width: 90vw;
+    position: relative;
+    left: 10vw;
+    object-fit: cover;
+  }
+  .bg-overlay h1 {
+    width: 200%
+  }
+}
+.bg-overlay h1 {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+.bg-overlay-social {
+  position: absolute;
+  top: 95%;
+  left: 30%;
+}
+.skinny-bg {
+  position: relative;
+  margin: 10vw 0;
+}
+/* -- iPad, Mobile size -- */
+@media screen and (max-width: 64em) {
+.skinny-bg {
+  position: relative;
+  margin: 10vw 0;
+}
+}
 /* images */
+.home-feature-img1 {
+  background-image: url('../images/Death_to_stock_photography_Vibrant.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 45vh;
+}
+.home-feature-img2 {
+  background-image: url('../images/breather-163400.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 45vh;
+}
+.home-feature-img3 {
+  background-image: url('../images/DeathtoStock_Clementine9.jpg');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 30%;
+  left: 18.7%;
+  transform: scale(1.2);
+}
+/* -- iPad, Mobile size -- */
+@media screen and (max-width: 64em) {
+  /* resizing for home page blog image */
+  .home-feature-img3-mb {
+    background-image: url('../images/DeathtoStock_Clementine9.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 45vh;
+  }
+}
 .client-feature-img1 {
   background-image: url('../images/rawpixel-com-252130.jpg');
   background-size: cover;
