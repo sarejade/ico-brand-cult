@@ -1,4 +1,8 @@
 collections:
-  casestudies:
+  case-studies:
     output: true
     permalink: /:categories/:path
+categories:
+- business
+- design
+- marketing

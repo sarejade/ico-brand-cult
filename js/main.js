@@ -12,7 +12,7 @@ function init() {
         distance: '40px',
         scale: 1,
         viewFactor: 0.5,
-        duration: 1500
+        duration: 1000
       });
       sr.reveal('.fade-in-element');
 

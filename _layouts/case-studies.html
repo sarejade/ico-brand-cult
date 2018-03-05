@@ -1,0 +1,112 @@
+---
+layout: default
+---
+<!-- START Client Case Study Intro -->
+<section class="bg-overlay-case-study">
+  </section>
+<section class="grid fade-in-element">
+  <div class="col-4_sm-12 grid">
+    <div class="col-12">
+      <h2>{{page.client-name}}</h2>
+      <h4 class="bold">{{page.industry}}</h4>
+    </div>
+    <div class="col-12-bottom-left">
+      {% for service in page.services %}
+      <h4>+ {{service}}</h4>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="col-4_sm-12">
+      <h4 class="bold">+ Background</h4>
+      <p>{{page.background}}</p>
+  </div>
+  <div class="col-4_sm-12">
+    <h4 class="bold">+ Project</h4>
+    <p>{{page.project}}</p>
+  </div>
+</section>
+<!-- END Client Case Study Intro -->
+<!-- START Feature image, small image and testimonal -->
+<section class="grid fade-in-element">
+  <div class="col-8_sm-12 client-feature-img" style="background-image:url('{{page.hero-img}}')">
+  </div>
+  <div class="col-4_sm-12">
+    <div class="client-feature-img hide-mb" style="background-image:url('{{page.small-img}}')">
+    </div>
+    <div class="centered">
+      <div class="grid-middle-center">
+        <span class="col-4_sm-12 quotation-mark">&#8220;</span>
+      </div>
+      <blockquote>{{page.testimonal-sml}}</blockquote>
+      <div>
+        <span class="author">&mdash; {{page.testimonal-sml-name}}</span>
+      </div>
+      <div class="grid-middle-center">
+        <span class="col quotation-mark">&#8221;</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-12_sm-12 client-feature-img hide-dt" style="background-image:url('{{page.client-feature-img}}')">
+  </div>
+</section>
+<section class="grid fade-in-element">
+  <div class="col-4_sm-12">
+    <h4 class="bold">+ Approach</h4>
+    <p>{{page.approach}}</p>
+  </div>
+  <div class="col-4_sm-12">
+    <h4 class="bold">+ Results</h4>
+    <p>{{page.results}}</p>
+  </div>
+  <div class="col-4_sm-12 grid-top">
+    <div class="col-12_sm-12 grid-middle-center">
+      {% for stat in page.stats %}
+      <div class="col-5_sm-5 padded">
+        <p class="percentage">{{stat.percentage}}</p>
+      </div>
+      <div class="col-7_sm-7 padded">
+        <p>{{stat.variable}}</p>
+      </div>
+      <hr class="col-12">
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="grid-middle-center light-peach-bg fade-in-element">
+  <div class="col-1 hide-mb">
+  </div>
+  <div class="col-2_sm-6 client-testimonial-profile-photo" style="background-image:url('{{page.client-feature-img}}')">
+  </div>
+  <div class="col-1 hide-mb">
+  </div>
+  <div class="col-6_sm-10 centered">
+    <div class="grid-middle-center">
+      <span class="col quotation-mark">&#8220;</span>
+    </div>
+    <blockquote>{{page.testimonal-feature}}</blockquote>
+    <div>
+      <span class="author">&mdash; {{page.testimonal-feature-name}}</span>
+    </div>
+    <div class="grid-middle-center">
+      <span class="col quotation-mark">&#8221;</span>
+    </div>
+  </div>
+</section>
+<section class="grid fade-in-element">
+  <div class="col-6_sm-12 gallery-padding-right">
+    <div class="client-gallery-img client-gallery-img-margin img-half gallery-padding hide-mb" style="background-image:url('{{page.gallery-image-1}}')">
+    </div>
+    <div class="client-gallery-img img-half gallery-padding hide-mb" style="background-image:url('{{page.gallery-image-2}}')">
+    </div>
+  </div>
+  <div class="col-6_sm-12 client-gallery-img img-full hide-mb" style="background-image:url('{{page.gallery-image-3}}')">
+  </div>
+  <div class="col-12_sm12">
+    <div class="client-gallery-img client-gallery-img-margin img-half gallery-padding hide-dt" style="background-image:url('{{page.gallery-image-1}}')">
+    </div>
+    <div class="client-gallery-img client-gallery-img-margin img-half gallery-padding hide-dt" style="background-image:url('{{page.gallery-image-2}}')">
+    </div>
+    <div class="client-gallery-img client-gallery-img-margin img-half gallery-padding hide-dt" style="background-image:url('{{page.gallery-image-3}}')">
+    </div>
+  </div>
+</section>

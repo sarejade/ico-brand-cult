@@ -114,6 +114,8 @@ body {
   font-family: 'Century Gothic', sans-serif;
   color: rgb(76,76,76);
   font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Century Gothic', sans-serif;
@@ -124,6 +126,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1 {
   font-size: 3.5rem;
+  text-transform: lowercase;
 }
 h2 {
   font-size: 2.4rem;
@@ -245,9 +248,10 @@ hr.col-12 {
   margin: 5% 0;
   z-index: 2;
 }
-.padded-services {
+.padded-sml {
   padding: 2.5% 2.5%;
 }
+
 /* -- iPad, Mobile size -- */
 @media screen and (max-width: 64em) {
   /* resizing of hr */
@@ -323,6 +327,13 @@ input[type=checkbox]{
   position: relative;
   left: 10vw;
 }
+.bg-overlay-case-study {
+  background-color: rgb(242,242,242);
+  width: 35%;
+  height: 120vh;
+  position: absolute;
+  padding: 10vh 5vw;
+}
 /* -- iPad, Mobile size -- */
 @media screen and (max-width: 64em) {
   .bg-overlay img {
@@ -336,13 +347,16 @@ input[type=checkbox]{
   .bg-overlay h1 {
     width: 200%
   }
+  .bg-overlay-case-study {
+    width: 100%;
+    height: 200vh;
+  }
 }
 .bg-overlay h1 {
   position: absolute;
   top: 15%;
   left: 15%;
 }
-
 .bg-overlay-social {
   position: absolute;
   top: 95%;
@@ -402,8 +416,7 @@ input[type=checkbox]{
   width: 40%;
   left: 10%;
 }
-.client-feature-img1 {
-  background-image: url('../images/rawpixel-com-252130.jpg');
+.client-feature-img, .client-testimonial-profile-photo, .client-gallery-img {
   background-size: cover;
   background-position: center;
   justify-content: center;
@@ -411,53 +424,35 @@ input[type=checkbox]{
   position: relative;
   min-height: 50vh;
 }
-.client-feature-img2 {
-  background-image: url('../images/lum3n-250309-unsplash.jpg');
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  min-height: 50vh;
-}
-.client-feature-img3 {
-  background-image: url('../images/Death_to_stock_photography_Wake_Up_5.jpg');
+.client-testimonial-profile-photo {
   border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  position: relative;
   min-height: 15vw;
 }
-.client-gallery-img1 {
-  background-image: url('../images/DeathtoStock_Creative Community7.jpg');
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  min-height: 50vh;
-  margin-bottom: 2%;
-}
-.client-gallery-img2 {
-  background-image: url('../images/sharon-mccutcheon-530229-unsplash.jpg');
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  min-height: 50vh;
-}
-.client-gallery-img3 {
-  background-image: url('../images/lauren-roberts-439974-unsplash.jpg');
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+.img-full {
   min-height: 100vh;
 }
+.img-half {
+  min-height: 50vh;
+}
+.client-gallery-img-margin {
+  margin-bottom: 2%;
+}
+
+/*-- Blog Previews --*/
+.blog-preview {
+  border: 1px solid grey;
+  padding: 1rem;
+}
+
+.blog-preview-thumbnail {
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 50%; 
+}
+
 /* -- iPad, Mobile size -- */
 @media screen and (max-width: 64em) {
   /* resizing for home page blog image */
@@ -470,13 +465,10 @@ input[type=checkbox]{
     position: relative;
     min-height: 45vh;
   }
-  .client-feature-img3 {
+.client-testimonial-profile-photo {
     min-height: 45vw;
   }
-  .client-gallery-img3 {
-    min-height: 50vh;
-  }
-  .client-gallery-img2 {
+  .client-gallery-img {
   margin-bottom: 2%;
   }
 }
