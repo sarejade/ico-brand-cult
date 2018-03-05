@@ -104,7 +104,7 @@ padding: 5vh 5vw;
   }
 }
 section {
-padding: 10vh 5vw;
+padding: 5vh 5vw;
 }
 [class*=col] {
 padding: -0.5vw;
@@ -143,6 +143,10 @@ h4 {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: normal;
+}
+.services-icons {
+  font-size: 3.5rem;
+  color: rgb(255,255,255);
 }
 /* -- iPad, Mobile size -- */
 @media screen and (max-width: 64em) {
@@ -241,6 +245,9 @@ hr.col-12 {
   margin: 5% 0;
   z-index: 2;
 }
+.padded-services {
+  padding: 2.5% 2.5%;
+}
 /* -- iPad, Mobile size -- */
 @media screen and (max-width: 64em) {
   /* resizing of hr */
@@ -308,6 +315,7 @@ input[type=checkbox]{
   background-color: rgb(242,242,242);
   width: 50%;
   position: relative;
+  padding: 10vh 5vw;
 }
 .bg-overlay img {
   width: 90vw;
@@ -334,6 +342,7 @@ input[type=checkbox]{
   top: 15%;
   left: 15%;
 }
+
 .bg-overlay-social {
   position: absolute;
   top: 95%;
@@ -342,6 +351,7 @@ input[type=checkbox]{
 .skinny-bg {
   position: relative;
   margin: 10vw 0;
+  padding: 5vw 5vw;
 }
 /* -- iPad, Mobile size -- */
 @media screen and (max-width: 64em) {
@@ -350,6 +360,17 @@ input[type=checkbox]{
   margin: 10vw 0;
 }
 }
+#slidebottom {
+  /*   transition: fade 20s linear;
+  /* opacity: 1;
+  visibility: visible;
+  position: relative; top: 0px; */
+}
+  /*
+@keyframes fade {
+  50% { opacity: 1 }
+}  */
+
 /* images */
 .home-feature-img1 {
   background-image: url('../images/Death_to_stock_photography_Vibrant.jpg');
@@ -376,24 +397,10 @@ input[type=checkbox]{
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0;
-  height: 100%;
-  width: 30%;
-  left: 18.7%;
-  transform: scale(1.2);
-}
-/* -- iPad, Mobile size -- */
-@media screen and (max-width: 64em) {
-  /* resizing for home page blog image */
-  .home-feature-img3-mb {
-    background-image: url('../images/DeathtoStock_Clementine9.jpg');
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    min-height: 45vh;
-  }
+  top: -40px;
+  height: 120%;
+  width: 40%;
+  left: 10%;
 }
 .client-feature-img1 {
   background-image: url('../images/rawpixel-com-252130.jpg');
@@ -450,4 +457,26 @@ input[type=checkbox]{
   align-items: center;
   position: relative;
   min-height: 100vh;
+}
+/* -- iPad, Mobile size -- */
+@media screen and (max-width: 64em) {
+  /* resizing for home page blog image */
+  .home-feature-img3-mb {
+    background-image: url('../images/DeathtoStock_Clementine9.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 45vh;
+  }
+  .client-feature-img3 {
+    min-height: 45vw;
+  }
+  .client-gallery-img3 {
+    min-height: 50vh;
+  }
+  .client-gallery-img2 {
+  margin-bottom: 2%;
+  }
 }
