@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+
+<section>
+  <h1> {{page.title}} Posts </h1>
+
+<div class="col-12_sm-12 grid filtr-container">
+
+ {% for post in page.posts %}
+  <div class="col-4_sm-12 filtr-item" data-sort="value" data-category="{{ post.category }}">
+    {% include blog-preview.html post=post %}
+  </div>
+
+ {% endfor %}
+
+</section>

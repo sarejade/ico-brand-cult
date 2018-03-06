@@ -1,9 +1,9 @@
 ---
 layout: post
-title: This is a business blog post
+title: This is a business post
 category: business
-banner: /images/breather-163400.jpg
-thumbnail: /images/breather-163400.jpg
+banner: /images/DeathtoStock_Clementine9.jpg
+thumbnail: /images/DeathtoStock_Clementine9.jpg
 summary: Lorem ipsim is a business blog postis a business blog postis a business blog post.
 ---
 

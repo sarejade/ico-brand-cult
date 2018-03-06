@@ -27,7 +27,7 @@ title: Brand Cult | Marketing + Design Devotion
     <hr id="overlay-left" class="col-12 hide-mb fade-in-element">
     <h3 class="fade-in-element">+ We are</h3>
     <p class="fade-in-element">This is the paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a href="#" class="cta fade-in-element">Learn More &gt;</a>
+    <a href="/about" class="cta fade-in-element">Learn More &gt;</a>
   </div>
 </section>
 <!-- END Feature image and About Us -->
@@ -44,19 +44,22 @@ title: Brand Cult | Marketing + Design Devotion
     <hr id="overlay-right" class="col-12 hide-mb fade-in-element">
     <h3 class="fade-in-element">+ Our services</h3>
     <p class="fade-in-element">This is the paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a href="#" class="cta fade-in-element">Learn More &gt;</a>
+    <a href="/services" class="cta fade-in-element">Learn More &gt;</a>
   </div>
 </section>
 <!-- END Feature image and Services -->
 <!-- START Desktop Blog -->
+{% assign latest-post = site.posts.last %}
 <section class="grid-middle-right light-bg skinny-bg hide-mb">
-  <div class="col-4 home-feature-img3 fade-in-element">
+  <div class="col-4 home-feature-blog fade-in-element" style="background-image:url('{{latest-post.banner}}')">
   </div>
   <div class="col-4">
     <h2 class="padding-right fade-in-element">On the blog</h2>
-    <h3 class="fade-in-element">+ Latest blog post heading</h3>
-    <p class="fade-in-element">This is the paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <a href="#" class="cta fade-in-element">Read More &gt;</a>
+    <h3 class="fade-in-element">+
+      {{ latest-post.title }}
+    </h3>
+    <p class="fade-in-element">{{ latest-post.summary }}</p>
+    <a href="{{ latest-post.url }}" class="cta fade-in-element">Read More &gt;</a>
   </div>
   <div class="col-1 hide-mb">
   </div>
@@ -64,13 +67,17 @@ title: Brand Cult | Marketing + Design Devotion
 <!-- END Desktop Blog -->
 <!-- START Mobile Blog -->
 <section class="grid-middle-center light-bg skinny-bg hide-dt">
-  <div class="col-4_sm-12 home-feature-img3-mb fade-in-element">
+  <div class="col-4_sm-12 home-feature-blog-mb fade-in-element" style="background-image:url('{{latest-post.banner}}')">
   </div>
   <div class="col-4_sm-10">
     <h2 class="padding-right padding-mb fade-in-element">On the blog</h2>
     <hr id="line-left-mb" class="sm-12 hide-dt fade-in-element">
-    <h3 class="fade-in-element">+ Latest blog post heading</h3>
-    <p class="fade-in-element">This is the paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <h3 class="fade-in-element">
+      + {{ latest-post.title }}
+    </h3>
+    <p class="fade-in-element">
+      {{ latest-post.summary }}
+    </p>
     <a href="#" class="cta fade-in-element">Read More &gt;</a>
   </div>
 </section>

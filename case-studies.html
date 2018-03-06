@@ -1,0 +1,43 @@
+---
+layout: default
+title: Case studies
+---
+
+<!-- START Case studies Intro -->
+<section class="grid-middle-center light-bg fade-in-element centered">
+  <div class="col-6_sm-8">
+      <h1>Case studies</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</section>
+<!-- END Case studies Intro -->
+<!-- START Case study Collection -->
+<section class="grid-middle-top-equalHeight">
+
+ {% for case-studies in site.case-studies %}
+  <div class="col-4_sm-12">
+    <article class="grid-noGutter blog-preview fade-in-element">
+      <div class="col-12-top">
+        <div class="case-studies-preview-thumbnail" style="background-image: url({{ case-studies.thumbnail }})"></div>
+        <h3>
+          <a href="{{ include.case-studies.url }}">
+            + {{ case-studies.title }}
+          </a>
+        </h3>
+        <p> {{ case-studies.summary }} </p>
+      </div>
+      <div class="col-12-bottom">
+        {% include cta.html url=case-studies.url cta="Read More" %}
+      </div>
+    </article>
+  </div>
+
+ {% endfor %}
+
+</section>
+<!-- END Case study Collection -->
+<section class="grid">
+  <div class="col-12_sm-12">
+
+  </div>
+</section>

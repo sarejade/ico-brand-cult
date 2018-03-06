@@ -1,9 +1,11 @@
 ---
 
 layout: post
-title: This is a marketing blog post
+title: This is a marketing post
 category: marketing
-
+banner: /images/sharon-mccutcheon-530229-unsplash.jpg
+thumbnail: /images/sharon-mccutcheon-530229-unsplash.jpg
+summary: Lorem ipsim is a business blog postis a business blog postis a business blog post.
 ---
 
 # This is a marketing blog post

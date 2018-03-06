@@ -1,0 +1,20 @@
+<article class="grid-noGutter blog-preview">
+  <div class="col-12-top">
+    <div class="blog-preview-thumbnail" style="background-image: url({{ include.post.thumbnail }})"></div>
+    <h3>
+      <a href="{{ include.post.url }}">
+        + {{ post.title }}
+      </a>
+    </h3>
+    <p class="summary">
+     {{ include.post.category }} |
+     <span class="date">
+       {{ include.post.date | date: '%B %d, %Y' }}
+     </span>
+    </p>
+    <p> {{ include.post.summary }} </p>
+  </div>
+  <div class="col-12-bottom">
+    {% include cta.html url=include.post.url cta="Read More" %}
+  </div>
+</article>
